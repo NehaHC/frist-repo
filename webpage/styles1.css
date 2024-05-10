@@ -1,0 +1,139 @@
+ nav {
+	background-color: whitesmoke;
+	padding: 10px;
+	position: absolute;
+	z-index: 40;
+	width:100%;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content:space-between;
+	padding-inline-end :50px;
+	float: right;
+	margin-left: 70px;
+	background-color: whitesmoke;
+  }
+  
+  nav li {
+	margin-right: 50px;
+	float: right;
+  }
+  
+  nav a {
+	color:gold;
+	text-decoration: none;
+	transition: color 0.2s ease;
+  }
+  .navbar-right{
+	float:right;
+	padding-right: 30px ;
+  }
+  .navbar-right {
+	text-decoration:none;
+  	padding-right:70px;
+ 	color:white;
+  	font-family:sans-serif;
+  	font-weight:900;
+  }
+  
+  nav a:hover {
+	color: #ccc;
+  }
+  .navbar-logo {
+	padding: left 0;
+	font-family:cursive;
+	font-size:50px;
+	font-weight:bold;
+	text-decoration:wavy;
+	color:gold;
+  }
+  
+  /* Animation effect */
+  nav li {
+	animation: slideIn 0.5s forwards;
+	animation-delay: 0.5s;
+  }
+  
+  @keyframes slideIn {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  .font{
+	font-size: larger;
+	color: rgb(245, 114, 7);
+  }
+  .mystyle{
+	font: size 30px;
+	color:rgba(255, 230, 0, 0.826);
+  }
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#background-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+#content {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	margin-top: 50px;
+	color:rgb(246, 246, 113);
+	font-size:x-large;
+	padding: 0 2rem;
+	z-index: 1;
+}
+.footer{
+	position:absolute;
+	text-align:center;
+	left: 35%;
+	top: 130%;
+	z-index: 1;
+	font-size: small;
+}
+
+@media (max-width: 500px) {
+	#content {
+		font-size:x-large;
+	}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	nav ul {
+	  flex-direction: row;
+	  justify-content: space-around;
+	}
+	nav li {
+	  margin-right: 20px;
+	}
+  }
+  
+  /* Mobile screen size */
+  @media (max-width: 767px) {
+	nav ul {
+	  flex-direction: column;
+	}
+	nav li {
+	  margin-right: 10px;
+	}
+	nav {
+	  padding: 5px;
+	}
+  }
+ 

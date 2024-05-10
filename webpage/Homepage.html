@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="img1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Dharamshala, Himachal Pradesh </span>
+            <h2>
+              "Traveling, it leaves you speechless, <br />
+                then turns you into a storyteller"
+            </h2>
+            <a href="#" class="button">EXPLORE</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">"Lost in the beauty of Bali"</span>
+            <h2>
+              "Bali is the island of the gods, <br />
+              the island of a thousand temples" 
+            </h2>
+            <a href="#" class="button">EXPLORE</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text"> Himalayas </span>
+            <h2>
+              "The mountains are calling, <br />
+              and I must go"
+            </h2>
+            <a href="#" class="button">EXPLORE</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img4.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">"An island a day keeps the stress away"</span>
+            <h2>
+              "The Maldives: where the water is so clear,  <br />
+              you can see your own problems"
+            </h2>
+            <a href="#" class="button">EXPLORE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
